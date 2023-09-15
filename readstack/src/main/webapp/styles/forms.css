@@ -1,0 +1,28 @@
+.user-form {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #BDBDBD;
+    justify-content: center;
+    margin: 50px auto;
+    max-width: 600px;
+}
+
+.user-form > * {
+    font-size: 1.2em;
+    margin: 16px;
+}
+
+.user-form > input,
+.user-form > button {
+    padding: 20px;
+    border: 1px solid #BDBDBD;
+}
+
+.user-form-title {
+    margin: 16px auto;
+}
+
+.user-form-button {
+    color: white;
+    background-color: #007AFF;
+}

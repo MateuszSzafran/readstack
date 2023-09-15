@@ -1,0 +1,15 @@
+<%@ page contentType="text/html;charset=UTF-8" %>
+<nav class="navbar">
+    <a href="${pageContext.request.contextPath}" class="logo">
+        <i class="fas fa-share-alt-square"></i>
+        ReadStack
+    </a>
+    <c:choose>
+        <c:when test="${empty pageContext.request.userPrincipal}">
+            <a href="${pageContext.request.contextPath}/login" class="login-button">Zaloguj</a>
+        </c:when>
+        <c:when test="${not empty pageContext.request.userPrincipal}">
+            <a href="${pageContext.request.contextPath}/logout" class="login-button">Wyloguj</a>
+        </c:when>
+    </c:choose>
+</nav>
